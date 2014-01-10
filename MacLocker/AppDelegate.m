@@ -16,10 +16,10 @@
 }
 
 -(void)awakeFromNib{
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setMenu:self.statusMenu];
-    [statusItem setImage:[NSImage imageNamed:@"locker"]];
-    [statusItem setHighlightMode:YES];
+    lockerItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [lockerItem setMenu:self.lockerMenu];
+    [lockerItem setImage:[NSImage imageNamed:@"locker"]];
+    [lockerItem setHighlightMode:YES];
 }
 
 @end

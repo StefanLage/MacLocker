@@ -13,7 +13,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="494" customClass="AppDelegate">
             <connections>
-                <outlet property="statusMenu" destination="nSy-3z-BRP" id="idX-cr-WmG"/>
+                <outlet property="lockerMenu" destination="nSy-3z-BRP" id="ifF-dX-aXv"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
@@ -21,13 +21,7 @@
             <items>
                 <menuItem title="Devices" id="n3u-sY-Zoh">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices">
-                        <items>
-                            <menuItem title="Item" id="hpm-In-aph">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                            </menuItem>
-                        </items>
-                    </menu>
+                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices"/>
                 </menuItem>
                 <menuItem title="Item 1" id="lCi-hV-7fG">
                     <modifierMask key="keyEquivalentModifierMask"/>

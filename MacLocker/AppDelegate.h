@@ -8,10 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
-    NSStatusItem * statusItem;
+    NSStatusItem * lockerItem;
 }
 
-@property (weak) IBOutlet NSMenu *statusMenu;
+@property (weak) IBOutlet NSMenu *lockerMenu;
 
 @end
