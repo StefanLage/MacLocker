@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8CE69F91880AE7800FD06BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69F81880AE7800FD06BE /* Cocoa.framework */; };
+		F8CE6A031880AE7800FD06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A011880AE7800FD06BE /* InfoPlist.strings */; };
+		F8CE6A051880AE7800FD06BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6A041880AE7800FD06BE /* main.m */; };
+		F8CE6A091880AE7800FD06BE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A071880AE7800FD06BE /* Credits.rtf */; };
+		F8CE6A0C1880AE7800FD06BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6A0B1880AE7800FD06BE /* AppDelegate.m */; };
+		F8CE6A0F1880AE7800FD06BE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A0D1880AE7800FD06BE /* MainMenu.xib */; };
+		F8CE6A111880AE7800FD06BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A101880AE7800FD06BE /* Images.xcassets */; };
+		F8CE6A181880AE7800FD06BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE6A171880AE7800FD06BE /* XCTest.framework */; };
+		F8CE6A191880AE7800FD06BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69F81880AE7800FD06BE /* Cocoa.framework */; };
+		F8CE6A211880AE7800FD06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A1F1880AE7800FD06BE /* InfoPlist.strings */; };
+		F8CE6A231880AE7800FD06BE /* MacLockerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6A221880AE7800FD06BE /* MacLockerTests.m */; };
+		F8D2A1E11880B5310077AC9B /* locker.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D2A1E01880B5310077AC9B /* locker.png */; };
+		F8D2A1E41880B6B30077AC9B /* NSMenuDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D2A1E31880B6B30077AC9B /* NSMenuDevices.m */; };
+		F8D2A1E61880B6F00077AC9B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D2A1E51880B6F00077AC9B /* IOBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8CE6A1A1880AE7800FD06BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8CE69ED1880AE7800FD06BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8CE69F41880AE7800FD06BE;
+			remoteInfo = MacLocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8CE69F51880AE7800FD06BE /* MacLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CE69F81880AE7800FD06BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F8CE69FB1880AE7800FD06BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F8CE69FC1880AE7800FD06BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F8CE69FD1880AE7800FD06BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8CE6A001880AE7800FD06BE /* MacLocker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacLocker-Info.plist"; sourceTree = "<group>"; };
+		F8CE6A021880AE7800FD06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8CE6A041880AE7800FD06BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8CE6A061880AE7800FD06BE /* MacLocker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacLocker-Prefix.pch"; sourceTree = "<group>"; };
+		F8CE6A081880AE7800FD06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F8CE6A0A1880AE7800FD06BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8CE6A0B1880AE7800FD06BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8CE6A0E1880AE7800FD06BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F8CE6A101880AE7800FD06BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8CE6A161880AE7800FD06BE /* MacLockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacLockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CE6A171880AE7800FD06BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8CE6A1E1880AE7800FD06BE /* MacLockerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacLockerTests-Info.plist"; sourceTree = "<group>"; };
+		F8CE6A201880AE7800FD06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8CE6A221880AE7800FD06BE /* MacLockerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacLockerTests.m; sourceTree = "<group>"; };
+		F8D2A1E01880B5310077AC9B /* locker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locker.png; sourceTree = "<group>"; };
+		F8D2A1E21880B6B30077AC9B /* NSMenuDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMenuDevices.h; sourceTree = "<group>"; };
+		F8D2A1E31880B6B30077AC9B /* NSMenuDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMenuDevices.m; sourceTree = "<group>"; };
+		F8D2A1E51880B6F00077AC9B /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8CE69F21880AE7800FD06BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D2A1E61880B6F00077AC9B /* IOBluetooth.framework in Frameworks */,
+				F8CE69F91880AE7800FD06BE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CE6A131880AE7800FD06BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CE6A191880AE7800FD06BE /* Cocoa.framework in Frameworks */,
+				F8CE6A181880AE7800FD06BE /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8CE69EC1880AE7800FD06BE = {
+			isa = PBXGroup;
+			children = (
+				F8CE69F71880AE7800FD06BE /* Frameworks */,
+				F8CE69FE1880AE7800FD06BE /* MacLocker */,
+				F8CE6A1C1880AE7800FD06BE /* MacLockerTests */,
+				F8CE69F61880AE7800FD06BE /* Products */,
+				F8D2A1DF1880B4D10077AC9B /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		F8CE69F61880AE7800FD06BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE69F51880AE7800FD06BE /* MacLocker.app */,
+				F8CE6A161880AE7800FD06BE /* MacLockerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8CE69F71880AE7800FD06BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2A1E51880B6F00077AC9B /* IOBluetooth.framework */,
+				F8CE69F81880AE7800FD06BE /* Cocoa.framework */,
+				F8CE6A171880AE7800FD06BE /* XCTest.framework */,
+				F8CE69FA1880AE7800FD06BE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8CE69FA1880AE7800FD06BE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE69FB1880AE7800FD06BE /* AppKit.framework */,
+				F8CE69FC1880AE7800FD06BE /* CoreData.framework */,
+				F8CE69FD1880AE7800FD06BE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F8CE69FE1880AE7800FD06BE /* MacLocker */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE6A2D1880AF0600FD06BE /* View */,
+				F8CE6A2C1880AEFC00FD06BE /* Classes */,
+				F8CE6A0D1880AE7800FD06BE /* MainMenu.xib */,
+				F8CE6A101880AE7800FD06BE /* Images.xcassets */,
+				F8CE69FF1880AE7800FD06BE /* Supporting Files */,
+			);
+			path = MacLocker;
+			sourceTree = "<group>";
+		};
+		F8CE69FF1880AE7800FD06BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE6A001880AE7800FD06BE /* MacLocker-Info.plist */,
+				F8CE6A011880AE7800FD06BE /* InfoPlist.strings */,
+				F8CE6A041880AE7800FD06BE /* main.m */,
+				F8CE6A061880AE7800FD06BE /* MacLocker-Prefix.pch */,
+				F8CE6A071880AE7800FD06BE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8CE6A1C1880AE7800FD06BE /* MacLockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE6A221880AE7800FD06BE /* MacLockerTests.m */,
+				F8CE6A1D1880AE7800FD06BE /* Supporting Files */,
+			);
+			path = MacLockerTests;
+			sourceTree = "<group>";
+		};
+		F8CE6A1D1880AE7800FD06BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE6A1E1880AE7800FD06BE /* MacLockerTests-Info.plist */,
+				F8CE6A1F1880AE7800FD06BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8CE6A2C1880AEFC00FD06BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE6A0A1880AE7800FD06BE /* AppDelegate.h */,
+				F8CE6A0B1880AE7800FD06BE /* AppDelegate.m */,
+				F8D2A1E21880B6B30077AC9B /* NSMenuDevices.h */,
+				F8D2A1E31880B6B30077AC9B /* NSMenuDevices.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F8CE6A2D1880AF0600FD06BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F8D2A1DF1880B4D10077AC9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8D2A1E01880B5310077AC9B /* locker.png */,
+			);
+			name = Resources;
+			path = MacLocker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8CE69F41880AE7800FD06BE /* MacLocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CE6A261880AE7800FD06BE /* Build configuration list for PBXNativeTarget "MacLocker" */;
+			buildPhases = (
+				F8CE69F11880AE7800FD06BE /* Sources */,
+				F8CE69F21880AE7800FD06BE /* Frameworks */,
+				F8CE69F31880AE7800FD06BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacLocker;
+			productName = MacLocker;
+			productReference = F8CE69F51880AE7800FD06BE /* MacLocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8CE6A151880AE7800FD06BE /* MacLockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CE6A291880AE7800FD06BE /* Build configuration list for PBXNativeTarget "MacLockerTests" */;
+			buildPhases = (
+				F8CE6A121880AE7800FD06BE /* Sources */,
+				F8CE6A131880AE7800FD06BE /* Frameworks */,
+				F8CE6A141880AE7800FD06BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8CE6A1B1880AE7800FD06BE /* PBXTargetDependency */,
+			);
+			name = MacLockerTests;
+			productName = MacLockerTests;
+			productReference = F8CE6A161880AE7800FD06BE /* MacLockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8CE69ED1880AE7800FD06BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Stefan Lage";
+				TargetAttributes = {
+					F8CE6A151880AE7800FD06BE = {
+						TestTargetID = F8CE69F41880AE7800FD06BE;
+					};
+				};
+			};
+			buildConfigurationList = F8CE69F01880AE7800FD06BE /* Build configuration list for PBXProject "MacLocker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8CE69EC1880AE7800FD06BE;
+			productRefGroup = F8CE69F61880AE7800FD06BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8CE69F41880AE7800FD06BE /* MacLocker */,
+				F8CE6A151880AE7800FD06BE /* MacLockerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8CE69F31880AE7800FD06BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CE6A031880AE7800FD06BE /* InfoPlist.strings in Resources */,
+				F8CE6A111880AE7800FD06BE /* Images.xcassets in Resources */,
+				F8CE6A091880AE7800FD06BE /* Credits.rtf in Resources */,
+				F8D2A1E11880B5310077AC9B /* locker.png in Resources */,
+				F8CE6A0F1880AE7800FD06BE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CE6A141880AE7800FD06BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CE6A211880AE7800FD06BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8CE69F11880AE7800FD06BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D2A1E41880B6B30077AC9B /* NSMenuDevices.m in Sources */,
+				F8CE6A0C1880AE7800FD06BE /* AppDelegate.m in Sources */,
+				F8CE6A051880AE7800FD06BE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8CE6A121880AE7800FD06BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CE6A231880AE7800FD06BE /* MacLockerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8CE6A1B1880AE7800FD06BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8CE69F41880AE7800FD06BE /* MacLocker */;
+			targetProxy = F8CE6A1A1880AE7800FD06BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8CE6A011880AE7800FD06BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CE6A021880AE7800FD06BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8CE6A071880AE7800FD06BE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CE6A081880AE7800FD06BE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F8CE6A0D1880AE7800FD06BE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CE6A0E1880AE7800FD06BE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F8CE6A1F1880AE7800FD06BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CE6A201880AE7800FD06BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8CE6A241880AE7800FD06BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F8CE6A251880AE7800FD06BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F8CE6A271880AE7800FD06BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacLocker/MacLocker-Prefix.pch";
+				INFOPLIST_FILE = "MacLocker/MacLocker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8CE6A281880AE7800FD06BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacLocker/MacLocker-Prefix.pch";
+				INFOPLIST_FILE = "MacLocker/MacLocker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F8CE6A2A1880AE7800FD06BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacLocker.app/Contents/MacOS/MacLocker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacLocker/MacLocker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MacLockerTests/MacLockerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F8CE6A2B1880AE7800FD06BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacLocker.app/Contents/MacOS/MacLocker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacLocker/MacLocker-Prefix.pch";
+				INFOPLIST_FILE = "MacLockerTests/MacLockerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8CE69F01880AE7800FD06BE /* Build configuration list for PBXProject "MacLocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CE6A241880AE7800FD06BE /* Debug */,
+				F8CE6A251880AE7800FD06BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CE6A261880AE7800FD06BE /* Build configuration list for PBXNativeTarget "MacLocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CE6A271880AE7800FD06BE /* Debug */,
+				F8CE6A281880AE7800FD06BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CE6A291880AE7800FD06BE /* Build configuration list for PBXNativeTarget "MacLockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CE6A2A1880AE7800FD06BE /* Debug */,
+				F8CE6A2B1880AE7800FD06BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8CE69ED1880AE7800FD06BE /* Project object */;
+}
