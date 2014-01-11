@@ -23,4 +23,20 @@ static Singleton * unique = nil;
     return unique;
 }
 
++(AppDelegate *) app{
+    return  [[NSApplication sharedApplication] delegate];
+}
+
+#pragma Device Selected
+-(void)setDeviceSelected:(IOBluetoothDevice*)device{
+    deviceSelected = device;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+        [[Singleton app] checkReachability];
+    });
+}
+
+-(IOBluetoothDevice*)getDeviceSelected{
+    return deviceSelected;
+}
+
 @end

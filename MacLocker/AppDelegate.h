@@ -14,5 +14,6 @@
 }
 
 @property (weak) IBOutlet NSMenu *lockerMenu;
+-(void)checkReachability;
 
 @end

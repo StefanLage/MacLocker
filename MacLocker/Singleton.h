@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <IOBluetooth/IOBluetooth.h>
+#import "AppDelegate.h"
 
-@interface Singleton : NSObject
+@interface Singleton : NSObject{
+    IOBluetoothDevice *deviceSelected;
+}
 
 +(Singleton *) manager;
-@property (strong, nonatomic) IOBluetoothDevice *deviceSelected;
++(AppDelegate *) app;
+-(void)setDeviceSelected:(IOBluetoothDevice*)device;
+-(IOBluetoothDevice*)getDeviceSelected;
 
 @end

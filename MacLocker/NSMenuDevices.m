@@ -9,6 +9,8 @@
 #import "NSMenuDevices.h"
 
 #define ClassMajor [NSArray arrayWithObjects:[NSNumber numberWithInt:1], [NSNumber numberWithInt:2], nil]
+#define ITEM_ON     1
+#define ITEM_OFF    0
 
 @implementation NSMenuDevices
 
@@ -41,7 +43,7 @@
     [self deselectDevice];
     NSMenuItem *item = (NSMenuItem*)sender;
     // Set it on
-    [item setState:1];
+    [item setState:ITEM_ON];
     [item setOnStateImage:[NSImage imageNamed:@"check"]];
     tagItemSelected = (int)item.tag;
     [[Singleton manager] setDeviceSelected:[devices objectAtIndex:item.tag]];
@@ -49,9 +51,9 @@
 
 -(void)deselectDevice{
     NSMenuItem *item = [self itemWithTag:tagItemSelected];
-    if([item state] == 1){
+    if([item state] == ITEM_ON){
         // Is it On ?
-        [item setState:0];
+        [item setState:ITEM_OFF];
     }
 }
 
