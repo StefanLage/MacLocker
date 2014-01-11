@@ -24,7 +24,7 @@ static Singleton * unique = nil;
 }
 
 +(AppDelegate *) app{
-    return  [[NSApplication sharedApplication] delegate];
+    return  (AppDelegate *)[[NSApplication sharedApplication] delegate];
 }
 
 #pragma Device Selected
@@ -37,6 +37,11 @@ static Singleton * unique = nil;
 
 -(IOBluetoothDevice*)getDeviceSelected{
     return deviceSelected;
+}
+
+# pragma NSManagedObjectContext of the app
+-(NSManagedObjectContext *) managedObjectContext{
+    return [(AppDelegate *)[NSApplication sharedApplication].delegate managedObjectContext];
 }
 
 @end

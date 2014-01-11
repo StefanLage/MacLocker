@@ -18,5 +18,6 @@
 +(AppDelegate *) app;
 -(void)setDeviceSelected:(IOBluetoothDevice*)device;
 -(IOBluetoothDevice*)getDeviceSelected;
+-(NSManagedObjectContext *) managedObjectContext;
 
 @end

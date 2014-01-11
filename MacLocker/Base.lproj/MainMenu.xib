@@ -14,6 +14,7 @@
         <customObject id="494" customClass="AppDelegate">
             <connections>
                 <outlet property="lockerMenu" destination="nSy-3z-BRP" id="ifF-dX-aXv"/>
+                <outlet property="menuDevices" destination="bIK-MP-ACc" id="xZO-Y3-UZN"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
@@ -21,11 +22,7 @@
             <items>
                 <menuItem title="Devices" id="n3u-sY-Zoh">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices">
-                        <connections>
-                            <outlet property="delegate" destination="494" id="I9S-O5-qng"/>
-                        </connections>
-                    </menu>
+                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices"/>
                 </menuItem>
                 <menuItem title="Turn Locker On" id="Mfa-Nd-Wcj">
                     <modifierMask key="keyEquivalentModifierMask"/>

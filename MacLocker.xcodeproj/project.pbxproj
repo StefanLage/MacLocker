@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82896C31880E6470065A99F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F82896C11880E6470065A99F /* Model.xcdatamodeld */; };
+		F82896C61880E68C0065A99F /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = F82896C51880E68C0065A99F /* Device.m */; };
+		F82896C71880E6F20065A99F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69FC1880AE7800FD06BE /* CoreData.framework */; };
 		F8979F381880C0C0003672EB /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = F8979F371880C0C0003672EB /* check.png */; };
 		F8979F3B1880C2C1003672EB /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8979F3A1880C2C1003672EB /* Singleton.m */; };
 		F8CE69F91880AE7800FD06BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69F81880AE7800FD06BE /* Cocoa.framework */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F82896C21880E6470065A99F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F82896C41880E68C0065A99F /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		F82896C51880E68C0065A99F /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 		F8979F371880C0C0003672EB /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		F8979F391880C2C1003672EB /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		F8979F3A1880C2C1003672EB /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82896C71880E6F20065A99F /* CoreData.framework in Frameworks */,
 				F8D2A1E61880B6F00077AC9B /* IOBluetooth.framework in Frameworks */,
 				F8CE69F91880AE7800FD06BE /* Cocoa.framework in Frameworks */,
 			);
@@ -86,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F82896C01880E62D0065A99F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F82896C11880E6470065A99F /* Model.xcdatamodeld */,
+				F82896C41880E68C0065A99F /* Device.h */,
+				F82896C51880E68C0065A99F /* Device.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		F8CE69EC1880AE7800FD06BE = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +147,10 @@
 		F8CE69FE1880AE7800FD06BE /* MacLocker */ = {
 			isa = PBXGroup;
 			children = (
-				F8CE6A2D1880AF0600FD06BE /* View */,
+				F82896C01880E62D0065A99F /* CoreData */,
 				F8CE6A2C1880AEFC00FD06BE /* Classes */,
-				F8CE6A0D1880AE7800FD06BE /* MainMenu.xib */,
-				F8CE6A101880AE7800FD06BE /* Images.xcassets */,
 				F8CE69FF1880AE7800FD06BE /* Supporting Files */,
+				F8CE6A2D1880AF0600FD06BE /* View */,
 			);
 			path = MacLocker;
 			sourceTree = "<group>";
@@ -142,6 +158,7 @@
 		F8CE69FF1880AE7800FD06BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE6A101880AE7800FD06BE /* Images.xcassets */,
 				F8CE6A001880AE7800FD06BE /* MacLocker-Info.plist */,
 				F8CE6A011880AE7800FD06BE /* InfoPlist.strings */,
 				F8CE6A041880AE7800FD06BE /* main.m */,
@@ -185,6 +202,7 @@
 		F8CE6A2D1880AF0600FD06BE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE6A0D1880AE7800FD06BE /* MainMenu.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -301,6 +319,8 @@
 			files = (
 				F8D2A1E41880B6B30077AC9B /* NSMenuDevices.m in Sources */,
 				F8979F3B1880C2C1003672EB /* Singleton.m in Sources */,
+				F82896C31880E6470065A99F /* Model.xcdatamodeld in Sources */,
+				F82896C61880E68C0065A99F /* Device.m in Sources */,
 				F8CE6A0C1880AE7800FD06BE /* AppDelegate.m in Sources */,
 				F8CE6A051880AE7800FD06BE /* main.m in Sources */,
 			);
@@ -525,6 +545,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F82896C11880E6470065A99F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F82896C21880E6470065A99F /* Model.xcdatamodel */,
+			);
+			currentVersion = F82896C21880E6470065A99F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F8CE69ED1880AE7800FD06BE /* Project object */;
 }
