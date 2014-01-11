@@ -48,7 +48,10 @@
     [device openConnection];
     if(![device isConnected]){
         NSString *msg = [NSString stringWithFormat:@"%@'s not reachable !", device.name];
-        NSRunAlertPanel( @"Error", msg, @"OK", nil, nil );
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Display the alert in the main thread to be safe
+            NSRunAlertPanel( @"Error", msg, @"OK", nil, nil );
+        });
         return NO;
     }else
         return YES;
@@ -59,11 +62,14 @@
         isTurnOn = NO;
         [self.lockSwitch setTitle:[NSString stringWithFormat:TURN_MSG, @"On"]];
     }else{
-        // Turn it on
-        isTurnOn = YES;
-        [self.lockSwitch setTitle:[NSString stringWithFormat:TURN_MSG, @"Off"]];
-        if([self checkReachability])
-            [self beginLockerProcess];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+            if([self checkReachability]){
+                // Turn it on
+                isTurnOn = YES;
+                [self.lockSwitch setTitle:[NSString stringWithFormat:TURN_MSG, @"Off"]];
+                [self beginLockerProcess];
+            }
+        });
     }
 }
 
@@ -80,6 +86,7 @@
         while (isTurnOn) {
             if(device == nil){
                 dispatch_async(dispatch_get_main_queue(), ^{
+                    // Call function of main to stop the process
                     [self turnOn:nil];
                 });
                 return;
