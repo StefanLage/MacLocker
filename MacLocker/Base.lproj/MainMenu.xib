@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="lockSwitch" destination="Mfa-Nd-Wcj" id="Q0y-fP-TmL"/>
                 <outlet property="lockerMenu" destination="nSy-3z-BRP" id="ifF-dX-aXv"/>
                 <outlet property="menuDevices" destination="bIK-MP-ACc" id="xZO-Y3-UZN"/>
             </connections>

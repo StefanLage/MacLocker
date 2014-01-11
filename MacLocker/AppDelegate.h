@@ -16,6 +16,7 @@
 
 @property (weak) IBOutlet NSMenu *lockerMenu;
 @property (weak) IBOutlet NSMenuDevices *menuDevices;
+@property (weak) IBOutlet NSMenuItem *lockSwitch;
 // ManagedObject
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;

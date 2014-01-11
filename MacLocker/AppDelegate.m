@@ -55,14 +55,13 @@
 }
 
 - (IBAction)turnOn:(id)sender {
-    NSMenuItem *turnOn = sender;
     if(isTurnOn){
         isTurnOn = NO;
-        [turnOn setTitle:[NSString stringWithFormat:TURN_MSG, @"On"]];
+        [self.lockSwitch setTitle:[NSString stringWithFormat:TURN_MSG, @"On"]];
     }else{
         // Turn it on
         isTurnOn = YES;
-        [turnOn setTitle:[NSString stringWithFormat:TURN_MSG, @"Off"]];
+        [self.lockSwitch setTitle:[NSString stringWithFormat:TURN_MSG, @"Off"]];
         if([self checkReachability])
             [self beginLockerProcess];
     }
@@ -79,12 +78,16 @@
         IOBluetoothDevice *device = [[Singleton manager] getDeviceSelected];
         BOOL isLocked = NO;
         while (isTurnOn) {
-            if(device == nil)
-                abort();
+            if(device == nil){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self turnOn:nil];
+                });
+                return;
+            }
             // be sure to be connected
             [device openConnection];
             if([device isConnected]){
-                if([device rawRSSI] < -60 && !isLocked){
+                if([device rawRSSI] < -70 && !isLocked){
                     // Low signal -> lock the Mac
                     [self screenSaver: YES];
                     isLocked = YES;
