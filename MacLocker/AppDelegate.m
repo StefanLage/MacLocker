@@ -36,7 +36,7 @@
     [smallImage lockFocus];
     [sourceImage setSize: size];
     [[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
-    [sourceImage compositeToPoint:NSZeroPoint operation:NSCompositeCopy];
+    [sourceImage drawAtPoint:NSZeroPoint fromRect:CGRectMake(0, 0, size.width, size.height) operation:NSCompositeCopy fraction:1.0];
     [smallImage unlockFocus];
     return smallImage;
 }
