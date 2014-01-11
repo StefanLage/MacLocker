@@ -47,9 +47,6 @@
     [item setOnStateImage:[NSImage imageNamed:@"check"]];
     tagItemSelected = (int)item.tag;
     [[Singleton manager] setDeviceSelected:[devices objectAtIndex:item.tag]];
-    if ([self.delegate respondsToSelector:@selector(deviceSelected:)]){
-        [self.delegate deviceSelected:YES];
-    }
 }
 
 -(void)deselectDevice{

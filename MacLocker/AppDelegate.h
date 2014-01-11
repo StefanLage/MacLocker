@@ -7,13 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NSMenuDevices.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSMenuDevicesDelegate>{
+@interface AppDelegate : NSObject <NSApplicationDelegate>{
     NSStatusItem * lockerItem;
+    BOOL isTurnOn;
 }
 
 @property (weak) IBOutlet NSMenu *lockerMenu;
--(void)checkReachability;
+-(BOOL)checkReachability;
+- (IBAction)turnOn:(id)sender;
 
 @end

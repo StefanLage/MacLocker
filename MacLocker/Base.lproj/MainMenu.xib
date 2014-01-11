@@ -29,6 +29,9 @@
                 </menuItem>
                 <menuItem title="Turn Locker On" id="Mfa-Nd-Wcj">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="turnOn:" target="494" id="icx-2V-Rem"/>
+                    </connections>
                 </menuItem>
             </items>
         </menu>

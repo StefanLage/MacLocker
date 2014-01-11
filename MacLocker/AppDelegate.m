@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#define TURN_MSG        @"Turn Locker %@"
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -20,13 +22,6 @@
     [lockerItem setMenu:self.lockerMenu];
     [lockerItem setImage:[NSImage imageNamed:@"locker"]];
     [lockerItem setHighlightMode:YES];
-}
-
--(void)deviceSelected:(BOOL)value{
-    if(value){
-        if([self checkReachability])
-            [self beginLockerProcess];
-    }
 }
 
 // Check if the device selected is reachable
@@ -42,12 +37,28 @@
         return YES;
 }
 
+- (IBAction)turnOn:(id)sender {
+    NSMenuItem *turnOn = sender;
+    if(isTurnOn){
+        isTurnOn = NO;
+        [turnOn setTitle:[NSString stringWithFormat:TURN_MSG, @"On"]];
+    }else{
+        // Turn it on
+        isTurnOn = YES;
+        [turnOn setTitle:[NSString stringWithFormat:TURN_MSG, @"Off"]];
+        if([self checkReachability])
+            [self beginLockerProcess];
+    }
+}
+
 #pragma Locker process
 -(void)beginLockerProcess{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
         IOBluetoothDevice *device = [[Singleton manager] getDeviceSelected];
         BOOL isLocked = NO;
-        while (YES) {
+        while (isTurnOn) {
+            if(device == nil)
+                abort();
             // be sure to be connected
             [device openConnection];
             if([device isConnected]){
