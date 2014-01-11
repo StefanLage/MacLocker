@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import <IOBluetooth/IOBluetooth.h>
 
-@interface NSMenuDevices : NSMenu
+@interface NSMenuDevices : NSMenu{
+    NSMutableArray *devices;
+}
 
 @end

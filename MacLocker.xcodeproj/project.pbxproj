@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8979F381880C0C0003672EB /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = F8979F371880C0C0003672EB /* check.png */; };
 		F8CE69F91880AE7800FD06BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69F81880AE7800FD06BE /* Cocoa.framework */; };
 		F8CE6A031880AE7800FD06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A011880AE7800FD06BE /* InfoPlist.strings */; };
 		F8CE6A051880AE7800FD06BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6A041880AE7800FD06BE /* main.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8979F371880C0C0003672EB /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		F8CE69F51880AE7800FD06BE /* MacLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CE69F81880AE7800FD06BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8CE69FB1880AE7800FD06BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -185,6 +187,7 @@
 		F8D2A1DF1880B4D10077AC9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8979F371880C0C0003672EB /* check.png */,
 				F8D2A1E01880B5310077AC9B /* locker.png */,
 			);
 			name = Resources;
@@ -267,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8979F381880C0C0003672EB /* check.png in Resources */,
 				F8CE6A031880AE7800FD06BE /* InfoPlist.strings in Resources */,
 				F8CE6A111880AE7800FD06BE /* Images.xcassets in Resources */,
 				F8CE6A091880AE7800FD06BE /* Credits.rtf in Resources */,
