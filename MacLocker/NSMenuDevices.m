@@ -44,7 +44,7 @@
     [item setState:1];
     [item setOnStateImage:[NSImage imageNamed:@"check"]];
     tagItemSelected = (int)item.tag;
-    //IOBluetoothDevice *device = [devices objectAtIndex:item.tag];
+    [[Singleton manager] setDeviceSelected:[devices objectAtIndex:item.tag]];
 }
 
 -(void)deselectDevice{
