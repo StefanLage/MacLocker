@@ -24,8 +24,21 @@
 -(void)awakeFromNib{
     lockerItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [lockerItem setMenu:self.lockerMenu];
-    [lockerItem setImage:[NSImage imageNamed:@"locker"]];
+    [lockerItem setImage:[self imageResized:[NSImage imageNamed:@"locker"] size:NSMakeSize(18, 18)]];
     [lockerItem setHighlightMode:YES];
+}
+
+// Resize an NSImage
+-(NSImage *)imageResized:(NSImage*)image size:(NSSize)size{
+    NSImage *sourceImage = image;
+    [sourceImage setScalesWhenResized:YES];
+    NSImage *smallImage = [[NSImage alloc] initWithSize: size];
+    [smallImage lockFocus];
+    [sourceImage setSize: size];
+    [[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
+    [sourceImage compositeToPoint:NSZeroPoint operation:NSCompositeCopy];
+    [smallImage unlockFocus];
+    return smallImage;
 }
 
 // Check if the device selected is reachable

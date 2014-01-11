@@ -12,6 +12,8 @@
 		F82896C71880E6F20065A99F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69FC1880AE7800FD06BE /* CoreData.framework */; };
 		F8979F381880C0C0003672EB /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = F8979F371880C0C0003672EB /* check.png */; };
 		F8979F3B1880C2C1003672EB /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8979F3A1880C2C1003672EB /* Singleton.m */; };
+		F8CB49081881C28E00125049 /* [MacLocker].iconset in Resources */ = {isa = PBXBuildFile; fileRef = F8CB49071881C28E00125049 /* [MacLocker].iconset */; };
+		F8CB490A1881C32500125049 /* locker.png in Resources */ = {isa = PBXBuildFile; fileRef = F8CB49091881C32500125049 /* locker.png */; };
 		F8CE69F91880AE7800FD06BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69F81880AE7800FD06BE /* Cocoa.framework */; };
 		F8CE6A031880AE7800FD06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A011880AE7800FD06BE /* InfoPlist.strings */; };
 		F8CE6A051880AE7800FD06BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6A041880AE7800FD06BE /* main.m */; };
@@ -23,7 +25,6 @@
 		F8CE6A191880AE7800FD06BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CE69F81880AE7800FD06BE /* Cocoa.framework */; };
 		F8CE6A211880AE7800FD06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6A1F1880AE7800FD06BE /* InfoPlist.strings */; };
 		F8CE6A231880AE7800FD06BE /* MacLockerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6A221880AE7800FD06BE /* MacLockerTests.m */; };
-		F8D2A1E11880B5310077AC9B /* locker.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D2A1E01880B5310077AC9B /* locker.png */; };
 		F8D2A1E41880B6B30077AC9B /* NSMenuDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D2A1E31880B6B30077AC9B /* NSMenuDevices.m */; };
 		F8D2A1E61880B6F00077AC9B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D2A1E51880B6F00077AC9B /* IOBluetooth.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,8 @@
 		F8979F371880C0C0003672EB /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		F8979F391880C2C1003672EB /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		F8979F3A1880C2C1003672EB /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		F8CB49071881C28E00125049 /* [MacLocker].iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = "[MacLocker].iconset"; sourceTree = "<group>"; };
+		F8CB49091881C32500125049 /* locker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locker.png; sourceTree = "<group>"; };
 		F8CE69F51880AE7800FD06BE /* MacLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CE69F81880AE7800FD06BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8CE69FB1880AE7800FD06BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,7 +67,6 @@
 		F8CE6A1E1880AE7800FD06BE /* MacLockerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacLockerTests-Info.plist"; sourceTree = "<group>"; };
 		F8CE6A201880AE7800FD06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8CE6A221880AE7800FD06BE /* MacLockerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacLockerTests.m; sourceTree = "<group>"; };
-		F8D2A1E01880B5310077AC9B /* locker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locker.png; sourceTree = "<group>"; };
 		F8D2A1E21880B6B30077AC9B /* NSMenuDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMenuDevices.h; sourceTree = "<group>"; };
 		F8D2A1E31880B6B30077AC9B /* NSMenuDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMenuDevices.m; sourceTree = "<group>"; };
 		F8D2A1E51880B6F00077AC9B /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
@@ -210,8 +212,9 @@
 		F8D2A1DF1880B4D10077AC9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8CB49071881C28E00125049 /* [MacLocker].iconset */,
 				F8979F371880C0C0003672EB /* check.png */,
-				F8D2A1E01880B5310077AC9B /* locker.png */,
+				F8CB49091881C32500125049 /* locker.png */,
 			);
 			name = Resources;
 			path = MacLocker;
@@ -297,8 +300,9 @@
 				F8CE6A031880AE7800FD06BE /* InfoPlist.strings in Resources */,
 				F8CE6A111880AE7800FD06BE /* Images.xcassets in Resources */,
 				F8CE6A091880AE7800FD06BE /* Credits.rtf in Resources */,
-				F8D2A1E11880B5310077AC9B /* locker.png in Resources */,
 				F8CE6A0F1880AE7800FD06BE /* MainMenu.xib in Resources */,
+				F8CB49081881C28E00125049 /* [MacLocker].iconset in Resources */,
+				F8CB490A1881C32500125049 /* locker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
