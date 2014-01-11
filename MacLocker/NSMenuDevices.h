@@ -9,9 +9,16 @@
 #import <Cocoa/Cocoa.h>
 #import <IOBluetooth/IOBluetooth.h>
 
+@protocol NSMenuDevicesDelegate <NSObject>
+-(void)deviceSelected:(BOOL)value;
+@end
+
 @interface NSMenuDevices : NSMenu{
     NSMutableArray *devices;
     int tagItemSelected;
 }
+
+// Delegate
+@property (retain, nonatomic) id<NSMenuDevicesDelegate> delegate;
 
 @end

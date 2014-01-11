@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSMenuDevices.h"
 
-
-@interface AppDelegate : NSObject <NSApplicationDelegate>{
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSMenuDevicesDelegate>{
     NSStatusItem * lockerItem;
 }
 

@@ -21,15 +21,13 @@
             <items>
                 <menuItem title="Devices" id="n3u-sY-Zoh">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices"/>
+                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices">
+                        <connections>
+                            <outlet property="delegate" destination="494" id="I9S-O5-qng"/>
+                        </connections>
+                    </menu>
                 </menuItem>
-                <menuItem title="Item 1" id="lCi-hV-7fG">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 2" id="iJQ-UQ-nz7">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 3" id="Mfa-Nd-Wcj">
+                <menuItem title="Turn Locker On" id="Mfa-Nd-Wcj">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
             </items>
