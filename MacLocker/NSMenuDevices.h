@@ -11,6 +11,7 @@
 
 @interface NSMenuDevices : NSMenu{
     NSMutableArray *devices;
+    int tagItemSelected;
 }
 
 @end

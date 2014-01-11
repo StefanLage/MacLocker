@@ -16,6 +16,7 @@
     self = [super initWithCoder:aDecoder];
     if(self){
         devices = [[NSMutableArray alloc] init];
+        tagItemSelected = 0;
         int i = 0;
         // We add all devices paired
         for(IOBluetoothDevice *device in [IOBluetoothDevice pairedDevices]){
@@ -37,11 +38,21 @@
 
 // Select a device
 -(void)selectDevice:(id)sender{
+    [self deselectDevice];
     NSMenuItem *item = (NSMenuItem*)sender;
     // Set it on
     [item setState:1];
     [item setOnStateImage:[NSImage imageNamed:@"check"]];
+    tagItemSelected = (int)item.tag;
     //IOBluetoothDevice *device = [devices objectAtIndex:item.tag];
+}
+
+-(void)deselectDevice{
+    NSMenuItem *item = [self itemWithTag:tagItemSelected];
+    if([item state] == 1){
+        // Is it On ?
+        [item setState:0];
+    }
 }
 
 @end
