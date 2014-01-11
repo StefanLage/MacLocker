@@ -22,5 +22,6 @@
 @property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 -(BOOL)checkReachability;
 - (IBAction)turnOn:(id)sender;
+- (IBAction)quit:(id)sender;
 
 @end

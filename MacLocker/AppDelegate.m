@@ -68,6 +68,11 @@
     }
 }
 
+- (IBAction)quit:(id)sender {
+    isTurnOn = NO;
+    exit(0);
+}
+
 #pragma Locker process
 -(void)beginLockerProcess{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){

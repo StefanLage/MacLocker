@@ -20,14 +20,22 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="nSy-3z-BRP">
             <items>
-                <menuItem title="Devices" id="n3u-sY-Zoh">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices"/>
-                </menuItem>
                 <menuItem title="Turn Locker On" id="Mfa-Nd-Wcj">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="turnOn:" target="494" id="icx-2V-Rem"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="SSD-mT-6Ss"/>
+                <menuItem title="Devices" id="n3u-sY-Zoh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Devices" id="bIK-MP-ACc" customClass="NSMenuDevices"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="uk8-tV-VLx"/>
+                <menuItem title="Quit" id="7CW-Bn-AZP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="494" id="zTd-a8-CSz"/>
                     </connections>
                 </menuItem>
             </items>
